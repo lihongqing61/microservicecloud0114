@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://127.0.0.1:3306/cloudDB01
+    username: root
+    password: root
+mybatis:
+  type-aliases-package: com.atguigu.springcloud.entities
+  mapper-locations: mybatis/mapper/*Dao.xml
