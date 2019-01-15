@@ -1,3 +1,4 @@
+一   准备
 1.  父工程 microservicecloud
     groupId: com.atguigu.springcloud
     microservicecloud: microservicecloud
@@ -6,3 +7,6 @@
     mvn clean install后给其它模块引用，达到通用目的。
     也即需要用到部门实体的话，不用每个工程都定义一份，直接引用本模块即可。
 3.  新建microservicecloud-provider-dept-8001  部门微服务提供者Module
+
+二   Eureka服务注册与发现
+1.

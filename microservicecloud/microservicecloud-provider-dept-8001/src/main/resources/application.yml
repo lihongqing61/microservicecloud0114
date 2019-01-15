@@ -7,6 +7,24 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/cloudDB01
     username: root
     password: root
+
+  application:
+    name: microservicecloud-dept8001-application-name
 mybatis:
   type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations: mybatis/mapper/*Dao.xml
+
+#客户端注册进eureka服务列表内
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-dept8001-instance-id
+    prefer-ip-address: true
+
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
